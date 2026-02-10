@@ -14,3 +14,4 @@ sentence-transformers>=2.2.2
 openai-whisper
 scikit-learn>=1.3.0
 Pillow>=10.0.0
+gunicorn==21.2.0
