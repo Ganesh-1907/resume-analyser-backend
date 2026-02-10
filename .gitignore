@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# VS Code
+.vscode/
+
+# Flask
+instance/
+.webassets-cache
+
+# Uploads and temporary files
+uploads/*
+!uploads/.gitkeep
+temp_videos/*
+!temp_videos/.gitkeep
+
+# Generated reports
+final_report.html
+final_report.json
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+
+# Models (if you download any large ML models)
+*.bin
+*.pt
+*.pth
+
+# Pytest
+.pytest_cache/
+.coverage
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/

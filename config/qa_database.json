@@ -1,0 +1,628 @@
+{
+  "python": [
+    {
+      "id": "py_001",
+      "question": "How do you handle exceptions in Python? Explain try-except blocks with an example.",
+      "expected_answer": "Python uses try-except blocks to handle exceptions. You place code that might raise an exception in the try block, and handle specific exceptions in except blocks. You can also use finally for cleanup code that always runs.",
+      "expected_keywords": ["try", "except", "finally", "exception", "error handling", "raise"],
+      "category": "python",
+      "difficulty": "easy"
+    },
+    {
+      "id": "py_002",
+      "question": "What are Python decorators and how do you use them?",
+      "expected_answer": "Decorators are functions that modify the behavior of other functions. They use the @ syntax and are placed above function definitions. Common uses include logging, timing, authentication, and caching.",
+      "expected_keywords": ["decorator", "@", "wrapper", "function", "modify behavior"],
+      "category": "python",
+      "difficulty": "medium"
+    },
+    {
+      "id": "py_003",
+      "question": "Explain the difference between lists and tuples in Python.",
+      "expected_answer": "Lists are mutable (can be changed) and use square brackets, while tuples are immutable (cannot be changed) and use parentheses. Lists are slower but more flexible, tuples are faster and safer for fixed data.",
+      "expected_keywords": ["list", "tuple", "mutable", "immutable", "brackets", "parentheses"],
+      "category": "python",
+      "difficulty": "easy"
+    },
+    {
+      "id": "py_004",
+      "question": "What are Python generators and why would you use them?",
+      "expected_answer": "Generators are functions that use yield instead of return to produce a sequence of values lazily. They save memory by generating values on-the-fly rather than storing them all at once. Useful for large datasets.",
+      "expected_keywords": ["generator", "yield", "iterator", "lazy evaluation", "memory efficient"],
+      "category": "python",
+      "difficulty": "medium"
+    },
+    {
+      "id": "py_005",
+      "question": "How does Python's Global Interpreter Lock (GIL) affect multithreading?",
+      "expected_answer": "The GIL prevents multiple native threads from executing Python bytecode simultaneously. This limits CPU-bound multithreading performance but doesn't affect I/O-bound operations. Use multiprocessing for CPU-intensive tasks.",
+      "expected_keywords": ["GIL", "threading", "multiprocessing", "concurrency", "CPU-bound", "I/O-bound"],
+      "category": "python",
+      "difficulty": "hard"
+    },
+    {
+      "id": "py_006",
+      "question": "Explain list comprehension in Python with an example.",
+      "expected_answer": "List comprehension provides a concise way to create lists. Syntax is [expression for item in iterable if condition]. For example: squares = [x**2 for x in range(10)] creates a list of squares.",
+      "expected_keywords": ["list comprehension", "expression", "iterable", "concise", "syntax"],
+      "category": "python",
+      "difficulty": "easy"
+    }
+  ],
+  "java": [
+    {
+      "id": "java_001",
+      "question": "What is the difference between abstract classes and interfaces in Java?",
+      "expected_answer": "Abstract classes can have both abstract and concrete methods, constructors, and instance variables. Interfaces (before Java 8) only had abstract methods. A class can implement multiple interfaces but extend only one abstract class.",
+      "expected_keywords": ["abstract class", "interface", "implements", "extends", "multiple inheritance"],
+      "category": "java",
+      "difficulty": "medium"
+    },
+    {
+      "id": "java_002",
+      "question": "Explain the concept of Java Collections Framework.",
+      "expected_answer": "Java Collections Framework provides interfaces and classes for storing and manipulating groups of objects. Key interfaces include List, Set, Map, and Queue. Common implementations are ArrayList, HashSet, HashMap, and LinkedList.",
+      "expected_keywords": ["collections", "List", "Set", "Map", "ArrayList", "HashMap", "framework"],
+      "category": "java",
+      "difficulty": "medium"
+    },
+    {
+      "id": "java_003",
+      "question": "What is method overloading and overriding in Java?",
+      "expected_answer": "Overloading is having multiple methods with the same name but different parameters in the same class. Overriding is redefining a parent class method in a child class with the same signature. Overloading is compile-time, overriding is runtime polymorphism.",
+      "expected_keywords": ["overloading", "overriding", "polymorphism", "inheritance", "signature"],
+      "category": "java",
+      "difficulty": "easy"
+    },
+    {
+      "id": "java_004",
+      "question": "How does Java's garbage collection work?",
+      "expected_answer": "Java automatically manages memory through garbage collection, which identifies and removes objects no longer referenced. It uses generational collection with young and old generations. Different GC algorithms include Serial, Parallel, CMS, and G1GC.",
+      "expected_keywords": ["garbage collection", "memory management", "heap", "generational", "GC algorithms"],
+      "category": "java",
+      "difficulty": "hard"
+    },
+    {
+      "id": "java_005",
+      "question": "Explain the Singleton design pattern in Java.",
+      "expected_answer": "Singleton ensures only one instance of a class exists. Implementation uses private constructor, static instance variable, and static getInstance() method. Thread-safe implementations use synchronized blocks or enum.",
+      "expected_keywords": ["singleton", "design pattern", "instance", "private constructor", "thread-safe"],
+      "category": "java",
+      "difficulty": "medium"
+    }
+  ],
+  "javascript": [
+    {
+      "id": "js_001",
+      "question": "What is the difference between var, let, and const in JavaScript?",
+      "expected_answer": "var is function-scoped and can be redeclared. let is block-scoped and can be reassigned but not redeclared. const is block-scoped and cannot be reassigned or redeclared. Use const by default, let when reassignment needed, avoid var.",
+      "expected_keywords": ["var", "let", "const", "scope", "block scope", "function scope"],
+      "category": "javascript",
+      "difficulty": "easy"
+    },
+    {
+      "id": "js_002",
+      "question": "Explain closures in JavaScript with an example.",
+      "expected_answer": "A closure is a function that has access to variables in its outer scope even after the outer function has returned. Closures are created when an inner function references variables from its outer function. Useful for data privacy and factory functions.",
+      "expected_keywords": ["closure", "scope", "inner function", "outer function", "lexical scope"],
+      "category": "javascript",
+      "difficulty": "medium"
+    },
+    {
+      "id": "js_003",
+      "question": "What are Promises in JavaScript and how do they work?",
+      "expected_answer": "Promises represent the eventual completion or failure of an asynchronous operation. They have three states: pending, fulfilled, or rejected. Use .then() for success, .catch() for errors, and .finally() for cleanup. async/await is syntactic sugar over promises.",
+      "expected_keywords": ["promise", "asynchronous", "then", "catch", "async", "await", "pending", "resolved", "rejected"],
+      "category": "javascript",
+      "difficulty": "medium"
+    },
+    {
+      "id": "js_004",
+      "question": "Explain the event loop in JavaScript.",
+      "expected_answer": "The event loop handles asynchronous operations in JavaScript's single-threaded environment. It continuously checks the call stack and task queues (macro and micro tasks). Promises and async/await use the microtask queue which has higher priority.",
+      "expected_keywords": ["event loop", "call stack", "callback queue", "microtask", "macrotask", "asynchronous"],
+      "category": "javascript",
+      "difficulty": "hard"
+    },
+    {
+      "id": "js_005",
+      "question": "What is destructuring in JavaScript?",
+      "expected_answer": "Destructuring allows unpacking values from arrays or properties from objects into distinct variables. Array destructuring uses square brackets, object destructuring uses curly braces. It makes code more readable and concise.",
+      "expected_keywords": ["destructuring", "array", "object", "unpacking", "assignment"],
+      "category": "javascript",
+      "difficulty": "easy"
+    },
+    {
+      "id": "js_006",
+      "question": "Explain arrow functions and their differences from regular functions.",
+      "expected_answer": "Arrow functions provide shorter syntax using =>. They don't have their own 'this' binding, inheriting from parent scope. They can't be used as constructors and don't have arguments object. Best for callbacks and functional programming.",
+      "expected_keywords": ["arrow function", "this", "lexical scope", "syntax", "callback"],
+      "category": "javascript",
+      "difficulty": "medium"
+    }
+  ],
+  "react": [
+    {
+      "id": "react_001",
+      "question": "What are React Hooks and why were they introduced?",
+      "expected_answer": "Hooks allow using state and lifecycle features in functional components. useState manages state, useEffect handles side effects, useContext accesses context. They eliminate need for class components, make code reusable, and simplify component logic.",
+      "expected_keywords": ["hooks", "useState", "useEffect", "functional components", "state management"],
+      "category": "react",
+      "difficulty": "medium"
+    },
+    {
+      "id": "react_002",
+      "question": "Explain the Virtual DOM in React.",
+      "expected_answer": "Virtual DOM is a lightweight copy of the actual DOM. React creates a virtual representation, compares it with previous version (reconciliation), calculates minimal changes needed, and updates only changed parts of real DOM. This improves performance.",
+      "expected_keywords": ["virtual DOM", "reconciliation", "diffing", "performance", "real DOM"],
+      "category": "react",
+      "difficulty": "medium"
+    },
+    {
+      "id": "react_003",
+      "question": "What is the difference between props and state in React?",
+      "expected_answer": "Props are read-only data passed from parent to child components. State is mutable data managed within a component. Props flow down the component tree, state is local to component. Changing state triggers re-render, props changes come from parent.",
+      "expected_keywords": ["props", "state", "immutable", "mutable", "parent", "child", "re-render"],
+      "category": "react",
+      "difficulty": "easy"
+    },
+    {
+      "id": "react_004",
+      "question": "Explain useEffect hook and its use cases.",
+      "expected_answer": "useEffect handles side effects like data fetching, subscriptions, or DOM manipulation. It runs after render. Dependency array controls when it runs. Empty array means run once, no array means run every render. Return cleanup function for unmount.",
+      "expected_keywords": ["useEffect", "side effects", "dependency array", "cleanup", "lifecycle"],
+      "category": "react",
+      "difficulty": "medium"
+    },
+    {
+      "id": "react_005",
+      "question": "What is React Context API and when should you use it?",
+      "expected_answer": "Context API provides a way to pass data through component tree without prop drilling. Use for global data like theme, user authentication, or language. Create context with createContext, provide with Provider, consume with useContext hook.",
+      "expected_keywords": ["context", "global state", "prop drilling", "provider", "useContext"],
+      "category": "react",
+      "difficulty": "medium"
+    },
+    {
+      "id": "react_006",
+      "question": "Explain React component lifecycle methods.",
+      "expected_answer": "Lifecycle has three phases: mounting (componentDidMount), updating (componentDidUpdate), and unmounting (componentWillUnmount). In functional components, useEffect handles all lifecycle events. Mounting for initialization, updating for changes, unmounting for cleanup.",
+      "expected_keywords": ["lifecycle", "mounting", "updating", "unmounting", "componentDidMount", "useEffect"],
+      "category": "react",
+      "difficulty": "medium"
+    }
+  ],
+  "react native": [
+    {
+      "id": "rn_001",
+      "question": "What is React Native and how does it differ from React?",
+      "expected_answer": "React Native is a framework for building native mobile apps using React and JavaScript. Unlike React which renders to DOM, React Native renders to native components. Uses platform-specific components like View instead of div, Text instead of p.",
+      "expected_keywords": ["React Native", "native", "mobile", "iOS", "Android", "components", "JavaScript"],
+      "category": "react native",
+      "difficulty": "easy"
+    },
+    {
+      "id": "rn_002",
+      "question": "Explain the Bridge in React Native architecture.",
+      "expected_answer": "The Bridge is the communication layer between JavaScript and native code. It serializes data to JSON and passes messages asynchronously. This can cause performance bottlenecks. New architecture uses JSI for direct native module access without bridge.",
+      "expected_keywords": ["bridge", "native", "JavaScript", "JSI", "architecture", "communication"],
+      "category": "react native",
+      "difficulty": "hard"
+    },
+    {
+      "id": "rn_003",
+      "question": "How do you handle navigation in React Native?",
+      "expected_answer": "Use React Navigation library for navigation. Stack Navigator for screen stacks, Tab Navigator for tabs, Drawer Navigator for side menu. Navigation prop provides navigate, goBack, push methods. Can pass parameters between screens.",
+      "expected_keywords": ["React Navigation", "stack", "navigator", "routing", "screens"],
+      "category": "react native",
+      "difficulty": "medium"
+    },
+    {
+      "id": "rn_004",
+      "question": "What are the differences between FlatList and ScrollView?",
+      "expected_answer": "ScrollView renders all children immediately, good for small lists. FlatList uses lazy rendering, only renders visible items, better for long lists. FlatList has built-in performance optimizations like virtualization and supports pull-to-refresh.",
+      "expected_keywords": ["FlatList", "ScrollView", "virtualization", "performance", "lazy rendering"],
+      "category": "react native",
+      "difficulty": "medium"
+    },
+    {
+      "id": "rn_005",
+      "question": "How do you optimize React Native app performance?",
+      "expected_answer": "Use FlatList for long lists, optimize images with correct sizes, use React.memo and useMemo, avoid inline functions, use Hermes engine, profile with React DevTools, minimize bridge communication, use native modules for heavy tasks.",
+      "expected_keywords": ["performance", "optimization", "FlatList", "memo", "Hermes", "native modules"],
+      "category": "react native",
+      "difficulty": "hard"
+    }
+  ],
+  "flutter": [
+    {
+      "id": "flutter_001",
+      "question": "What is Flutter and what makes it different from other mobile frameworks?",
+      "expected_answer": "Flutter is Google's UI framework for building natively compiled mobile, web, and desktop apps from a single codebase. Uses Dart language, has own rendering engine (Skia), provides rich widget library, and offers hot reload for fast development.",
+      "expected_keywords": ["Flutter", "Dart", "cross-platform", "widgets", "hot reload", "Skia"],
+      "category": "flutter",
+      "difficulty": "easy"
+    },
+    {
+      "id": "flutter_002",
+      "question": "Explain StatefulWidget vs StatelessWidget in Flutter.",
+      "expected_answer": "StatelessWidget is immutable, renders once and doesn't change. StatefulWidget is mutable, has State object that can change over time. Use StatelessWidget for static content, StatefulWidget when UI depends on changing data. setState() triggers rebuild.",
+      "expected_keywords": ["StatefulWidget", "StatelessWidget", "state", "immutable", "setState", "rebuild"],
+      "category": "flutter",
+      "difficulty": "easy"
+    },
+    {
+      "id": "flutter_003",
+      "question": "What is the widget tree in Flutter?",
+      "expected_answer": "Widget tree is hierarchical structure of widgets. Everything in Flutter is a widget. Parent widgets contain child widgets. Flutter traverses tree to build UI. Three trees exist: Widget tree (configuration), Element tree (instantiation), RenderObject tree (rendering).",
+      "expected_keywords": ["widget tree", "hierarchy", "parent", "child", "element tree", "render tree"],
+      "category": "flutter",
+      "difficulty": "medium"
+    },
+    {
+      "id": "flutter_004",
+      "question": "Explain Flutter's state management approaches.",
+      "expected_answer": "Flutter offers multiple state management solutions: setState for local state, InheritedWidget for propagating data, Provider for dependency injection, Riverpod for modern approach, BLoC for business logic separation, GetX for minimal code.",
+      "expected_keywords": ["state management", "Provider", "BLoC", "Riverpod", "setState", "InheritedWidget"],
+      "category": "flutter",
+      "difficulty": "hard"
+    },
+    {
+      "id": "flutter_005",
+      "question": "How does Flutter's hot reload work?",
+      "expected_answer": "Hot reload injects updated source code into running Dart VM. Preserves app state while updating UI. Works by recompiling changed files and patching them into running app. Faster than hot restart which loses state. Great for UI iteration.",
+      "expected_keywords": ["hot reload", "Dart VM", "state preservation", "development", "iteration"],
+      "category": "flutter",
+      "difficulty": "medium"
+    }
+  ],
+  "ios": [
+    {
+      "id": "ios_001",
+      "question": "What is the difference between UIKit and SwiftUI?",
+      "expected_answer": "UIKit is imperative, event-driven framework using UIViewController and programmatic/storyboard UI. SwiftUI is declarative, data-driven framework using Views and state. SwiftUI has live preview, easier syntax, but UIKit offers more control and maturity.",
+      "expected_keywords": ["UIKit", "SwiftUI", "imperative", "declarative", "view", "controller"],
+      "category": "ios",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ios_002",
+      "question": "Explain the iOS app lifecycle.",
+      "expected_answer": "App lifecycle includes: Not Running, Inactive, Active, Background, Suspended states. AppDelegate/SceneDelegate handle transitions. Methods include didFinishLaunching, didBecomeActive, didEnterBackground. Important for saving data, pausing tasks, managing resources.",
+      "expected_keywords": ["lifecycle", "AppDelegate", "active", "background", "suspended", "state"],
+      "category": "ios",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ios_003",
+      "question": "What is ARC in iOS and how does it work?",
+      "expected_answer": "ARC (Automatic Reference Counting) manages memory by tracking object references. Automatically inserts retain/release calls at compile time. Strong references keep objects alive, weak/unowned prevent retain cycles. Developer must handle retain cycles manually.",
+      "expected_keywords": ["ARC", "memory management", "retain", "release", "strong", "weak", "retain cycle"],
+      "category": "ios",
+      "difficulty": "hard"
+    },
+    {
+      "id": "ios_004",
+      "question": "Explain delegation pattern in iOS.",
+      "expected_answer": "Delegation is a design pattern where one object acts on behalf of another. Uses protocols to define delegate methods. Common in UITableView, UITextField. Helps with separation of concerns and loose coupling between objects.",
+      "expected_keywords": ["delegation", "delegate", "protocol", "design pattern", "callback"],
+      "category": "ios",
+      "difficulty": "medium"
+    }
+  ],
+  "android": [
+    {
+      "id": "android_001",
+      "question": "Explain the Android Activity lifecycle.",
+      "expected_answer": "Activity lifecycle includes onCreate, onStart, onResume, onPause, onStop, onDestroy methods. onCreate initializes activity, onResume when visible, onPause when losing focus, onDestroy when finishing. Important for managing resources and state.",
+      "expected_keywords": ["activity", "lifecycle", "onCreate", "onResume", "onPause", "onDestroy"],
+      "category": "android",
+      "difficulty": "medium"
+    },
+    {
+      "id": "android_002",
+      "question": "What is the difference between Service and IntentService?",
+      "expected_answer": "Service runs on main thread, used for long-running operations. IntentService runs on worker thread, handles requests sequentially, stops automatically when done. IntentService is deprecated, use WorkManager or JobScheduler instead.",
+      "expected_keywords": ["Service", "IntentService", "background", "thread", "WorkManager"],
+      "category": "android",
+      "difficulty": "medium"
+    },
+    {
+      "id": "android_003",
+      "question": "Explain Android's MVVM architecture pattern.",
+      "expected_answer": "MVVM separates UI (View) from business logic (ViewModel) and data (Model). ViewModel exposes data via LiveData/StateFlow. View observes ViewModel. ViewModel doesn't reference View. Promotes testability and separation of concerns.",
+      "expected_keywords": ["MVVM", "ViewModel", "LiveData", "architecture", "separation of concerns"],
+      "category": "android",
+      "difficulty": "hard"
+    },
+    {
+      "id": "android_004",
+      "question": "What are Android Fragments and when to use them?",
+      "expected_answer": "Fragments are reusable UI portions with their own lifecycle, hosted in Activities. Use for modular UI, tablets/multi-pane layouts, ViewPager, navigation. Have lifecycle methods like onCreateView. Can communicate with Activity via interfaces.",
+      "expected_keywords": ["fragment", "lifecycle", "reusable", "modular", "ViewPager"],
+      "category": "android",
+      "difficulty": "medium"
+    }
+  ],
+  "docker": [
+    {
+      "id": "docker_001",
+      "question": "What is Docker and what problems does it solve?",
+      "expected_answer": "Docker is a containerization platform that packages applications with dependencies. Solves 'works on my machine' problem, ensures consistency across environments, enables microservices, provides isolation, and simplifies deployment.",
+      "expected_keywords": ["Docker", "container", "containerization", "isolation", "dependencies", "deployment"],
+      "category": "docker",
+      "difficulty": "easy"
+    },
+    {
+      "id": "docker_002",
+      "question": "Explain the difference between Docker images and containers.",
+      "expected_answer": "Image is a read-only template with instructions for creating containers. Container is a running instance of an image. Images are built from Dockerfile, stored in registries. Containers are created from images using docker run.",
+      "expected_keywords": ["image", "container", "Dockerfile", "template", "instance", "runtime"],
+      "category": "docker",
+      "difficulty": "easy"
+    },
+    {
+      "id": "docker_003",
+      "question": "What is a Dockerfile and what are its key instructions?",
+      "expected_answer": "Dockerfile is a text file with instructions to build Docker image. Key instructions: FROM (base image), RUN (execute commands), COPY/ADD (files), WORKDIR (directory), EXPOSE (ports), CMD/ENTRYPOINT (startup command), ENV (environment variables).",
+      "expected_keywords": ["Dockerfile", "FROM", "RUN", "COPY", "CMD", "ENTRYPOINT", "build"],
+      "category": "docker",
+      "difficulty": "medium"
+    },
+    {
+      "id": "docker_004",
+      "question": "Explain Docker networking modes.",
+      "expected_answer": "Docker has network modes: bridge (default, isolated network), host (shares host network), none (no networking), overlay (multi-host networking for Swarm), macvlan (assigns MAC address). Use docker network commands to manage networks.",
+      "expected_keywords": ["networking", "bridge", "host", "overlay", "network modes", "isolation"],
+      "category": "docker",
+      "difficulty": "hard"
+    },
+    {
+      "id": "docker_005",
+      "question": "What is Docker Compose and when would you use it?",
+      "expected_answer": "Docker Compose is a tool for defining and running multi-container applications using YAML file. Defines services, networks, volumes. Use for development environments, testing, simple deployments. Commands: docker-compose up, down, ps, logs.",
+      "expected_keywords": ["Docker Compose", "multi-container", "YAML", "services", "orchestration"],
+      "category": "docker",
+      "difficulty": "medium"
+    }
+  ],
+  "kubernetes": [
+    {
+      "id": "k8s_001",
+      "question": "What is Kubernetes and what are its main components?",
+      "expected_answer": "Kubernetes is a container orchestration platform. Main components: Master (API server, scheduler, controller manager, etcd) and Nodes (kubelet, kube-proxy, container runtime). Manages deployment, scaling, and operations of containerized applications.",
+      "expected_keywords": ["Kubernetes", "orchestration", "master", "node", "pod", "cluster"],
+      "category": "kubernetes",
+      "difficulty": "medium"
+    },
+    {
+      "id": "k8s_002",
+      "question": "Explain Kubernetes Pods and why they are needed.",
+      "expected_answer": "Pod is the smallest deployable unit in Kubernetes, contains one or more containers. Containers in a pod share network namespace, storage volumes, and lifecycle. Pods are ephemeral and managed by higher-level controllers like Deployments.",
+      "expected_keywords": ["pod", "container", "smallest unit", "shared network", "ephemeral"],
+      "category": "kubernetes",
+      "difficulty": "easy"
+    },
+    {
+      "id": "k8s_003",
+      "question": "What is the difference between Deployment and StatefulSet?",
+      "expected_answer": "Deployment manages stateless apps, pods are interchangeable, scaling is simple. StatefulSet manages stateful apps, each pod has unique identity and persistent storage, maintains order in scaling. Use Deployment for web apps, StatefulSet for databases.",
+      "expected_keywords": ["Deployment", "StatefulSet", "stateless", "stateful", "persistent", "identity"],
+      "category": "kubernetes",
+      "difficulty": "medium"
+    },
+    {
+      "id": "k8s_004",
+      "question": "Explain Kubernetes Services and their types.",
+      "expected_answer": "Service is an abstraction for accessing pods. Types: ClusterIP (internal), NodePort (exposes on node port), LoadBalancer (cloud load balancer), ExternalName (DNS CNAME). Services provide stable networking for dynamic pods.",
+      "expected_keywords": ["Service", "ClusterIP", "NodePort", "LoadBalancer", "networking", "discovery"],
+      "category": "kubernetes",
+      "difficulty": "medium"
+    },
+    {
+      "id": "k8s_005",
+      "question": "What are Kubernetes ConfigMaps and Secrets?",
+      "expected_answer": "ConfigMaps store non-sensitive configuration data as key-value pairs. Secrets store sensitive data like passwords, encoded in base64. Both can be mounted as volumes or environment variables. Secrets have additional security features and access controls.",
+      "expected_keywords": ["ConfigMap", "Secret", "configuration", "environment variables", "sensitive data"],
+      "category": "kubernetes",
+      "difficulty": "medium"
+    }
+  ],
+  "aws": [
+    {
+      "id": "aws_001",
+      "question": "What is AWS EC2 and what are its use cases?",
+      "expected_answer": "EC2 (Elastic Compute Cloud) provides scalable virtual servers in the cloud. Use cases include web hosting, application servers, development environments, batch processing. Offers various instance types optimized for compute, memory, or storage.",
+      "expected_keywords": ["EC2", "virtual machine", "instance", "compute", "scalable", "cloud"],
+      "category": "aws",
+      "difficulty": "easy"
+    },
+    {
+      "id": "aws_002",
+      "question": "Explain the difference between S3 storage classes.",
+      "expected_answer": "S3 Standard for frequent access, S3 Intelligent-Tiering for changing patterns, S3 Standard-IA for infrequent access, S3 Glacier for archival, S3 Glacier Deep Archive for long-term. Each has different pricing and retrieval times.",
+      "expected_keywords": ["S3", "storage classes", "Standard", "Glacier", "archival", "pricing"],
+      "category": "aws",
+      "difficulty": "medium"
+    },
+    {
+      "id": "aws_003",
+      "question": "What is AWS Lambda and when would you use it?",
+      "expected_answer": "Lambda is serverless compute service that runs code in response to events. No server management, auto-scaling, pay per execution. Use for event-driven apps, API backends, data processing, scheduled tasks. Supports multiple languages.",
+      "expected_keywords": ["Lambda", "serverless", "function", "event-driven", "auto-scaling"],
+      "category": "aws",
+      "difficulty": "medium"
+    },
+    {
+      "id": "aws_004",
+      "question": "Explain AWS VPC and its components.",
+      "expected_answer": "VPC (Virtual Private Cloud) is isolated network in AWS. Components include subnets (public/private), route tables, internet gateway, NAT gateway, security groups, NACLs. Enables custom network topology and security controls.",
+      "expected_keywords": ["VPC", "subnet", "security group", "route table", "gateway", "network"],
+      "category": "aws",
+      "difficulty": "hard"
+    }
+  ],
+  "ci/cd": [
+    {
+      "id": "cicd_001",
+      "question": "What is CI/CD and why is it important?",
+      "expected_answer": "CI/CD is Continuous Integration and Continuous Deployment. CI automatically builds and tests code changes. CD automatically deploys to production. Benefits include faster releases, early bug detection, consistent deployments, reduced manual errors.",
+      "expected_keywords": ["CI/CD", "continuous integration", "continuous deployment", "automation", "pipeline"],
+      "category": "ci/cd",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cicd_002",
+      "question": "Explain the stages of a typical CI/CD pipeline.",
+      "expected_answer": "Typical stages: Source (trigger on commit), Build (compile code), Test (unit, integration tests), Package (create artifacts), Deploy (to staging), Test (E2E, smoke tests), Deploy (to production), Monitor. Each stage can have quality gates.",
+      "expected_keywords": ["pipeline", "build", "test", "deploy", "stages", "automation"],
+      "category": "ci/cd",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cicd_003",
+      "question": "What is the difference between Jenkins and GitHub Actions?",
+      "expected_answer": "Jenkins is self-hosted, highly customizable with plugins, requires infrastructure management. GitHub Actions is cloud-based, integrated with GitHub, uses YAML workflows, easier setup. Jenkins offers more control, GitHub Actions simpler for GitHub projects.",
+      "expected_keywords": ["Jenkins", "GitHub Actions", "automation", "workflow", "pipeline", "deployment"],
+      "category": "ci/cd",
+      "difficulty": "medium"
+    }
+  ],
+  "sql": [
+    {
+      "id": "sql_001",
+      "question": "What is the difference between INNER JOIN and LEFT JOIN?",
+      "expected_answer": "INNER JOIN returns only matching rows from both tables. LEFT JOIN returns all rows from left table and matching rows from right table, with NULLs for non-matches. RIGHT JOIN is opposite of LEFT JOIN.",
+      "expected_keywords": ["INNER JOIN", "LEFT JOIN", "matching", "NULL", "tables"],
+      "category": "sql",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sql_002",
+      "question": "Explain database normalization and its forms.",
+      "expected_answer": "Normalization organizes data to reduce redundancy. 1NF: atomic values, unique rows. 2NF: 1NF plus no partial dependencies. 3NF: 2NF plus no transitive dependencies. BCNF: stricter 3NF. Denormalization may be used for performance.",
+      "expected_keywords": ["normalization", "1NF", "2NF", "3NF", "redundancy", "dependencies"],
+      "category": "sql",
+      "difficulty": "hard"
+    },
+    {
+      "id": "sql_003",
+      "question": "What are indexes in databases and when to use them?",
+      "expected_answer": "Indexes are data structures that improve query performance by allowing faster lookups. Trade-off: faster reads but slower writes and more storage. Use on frequently queried columns, foreign keys, WHERE/JOIN clauses. Avoid over-indexing.",
+      "expected_keywords": ["index", "performance", "query optimization", "B-tree", "foreign key"],
+      "category": "sql",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sql_004",
+      "question": "Explain ACID properties in databases.",
+      "expected_answer": "ACID ensures reliable transactions: Atomicity (all or nothing), Consistency (valid state), Isolation (concurrent transactions don't interfere), Durability (committed data persists). Essential for data integrity in relational databases.",
+      "expected_keywords": ["ACID", "atomicity", "consistency", "isolation", "durability", "transaction"],
+      "category": "sql",
+      "difficulty": "medium"
+    }
+  ],
+  "mongodb": [
+    {
+      "id": "mongo_001",
+      "question": "What is MongoDB and how does it differ from SQL databases?",
+      "expected_answer": "MongoDB is a NoSQL document database storing data in JSON-like BSON format. Unlike SQL, it's schema-less, horizontally scalable, uses collections instead of tables, documents instead of rows. Good for flexible schemas and high write loads.",
+      "expected_keywords": ["MongoDB", "NoSQL", "document", "BSON", "schema-less", "scalable"],
+      "category": "mongodb",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mongo_002",
+      "question": "Explain MongoDB aggregation pipeline.",
+      "expected_answer": "Aggregation pipeline processes documents through stages like $match (filter), $group (aggregate), $project (reshape), $sort, $limit. Each stage transforms documents and passes to next. Powerful for complex data transformations and analytics.",
+      "expected_keywords": ["aggregation", "pipeline", "$match", "$group", "stages", "transform"],
+      "category": "mongodb",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mongo_003",
+      "question": "What are indexes in MongoDB and types available?",
+      "expected_answer": "Indexes improve query performance. Types include: single field, compound (multiple fields), multikey (arrays), text (text search), geospatial, hashed. Default _id index. Use createIndex() method. Explain() shows query execution.",
+      "expected_keywords": ["index", "compound", "multikey", "performance", "createIndex"],
+      "category": "mongodb",
+      "difficulty": "medium"
+    }
+  ],
+  "git": [
+    {
+      "id": "git_001",
+      "question": "What is the difference between git merge and git rebase?",
+      "expected_answer": "Merge creates a new commit combining two branches, preserving history. Rebase replays commits from one branch onto another, creating linear history. Merge is safer for shared branches, rebase for cleaner history on feature branches.",
+      "expected_keywords": ["merge", "rebase", "branch", "history", "commit", "linear"],
+      "category": "git",
+      "difficulty": "medium"
+    },
+    {
+      "id": "git_002",
+      "question": "Explain Git branching strategies.",
+      "expected_answer": "Common strategies: Git Flow (master, develop, feature, release, hotfix branches), GitHub Flow (main and feature branches), Trunk-based (short-lived feature branches). Choose based on team size, release frequency, and deployment model.",
+      "expected_keywords": ["branching", "Git Flow", "feature branch", "strategy", "workflow"],
+      "category": "git",
+      "difficulty": "medium"
+    },
+    {
+      "id": "git_003",
+      "question": "What is git cherry-pick and when to use it?",
+      "expected_answer": "Cherry-pick applies specific commits from one branch to another. Useful for applying hotfixes, selective feature porting, or undoing changes. Use sparingly as it duplicates commits and can complicate history.",
+      "expected_keywords": ["cherry-pick", "commit", "selective", "apply", "branch"],
+      "category": "git",
+      "difficulty": "medium"
+    }
+  ],
+  "node.js": [
+    {
+      "id": "node_001",
+      "question": "What is Node.js and what makes it different from browser JavaScript?",
+      "expected_answer": "Node.js is a JavaScript runtime built on Chrome's V8 engine for server-side development. Unlike browsers, it has access to file system, no DOM/window, includes modules like fs, http, path. Uses event-driven, non-blocking I/O model.",
+      "expected_keywords": ["Node.js", "V8", "server-side", "runtime", "event-driven", "non-blocking"],
+      "category": "node.js",
+      "difficulty": "easy"
+    },
+    {
+      "id": "node_002",
+      "question": "Explain the Event Loop in Node.js.",
+      "expected_answer": "Event loop handles asynchronous operations. Phases include timers, pending callbacks, poll, check, close callbacks. Executes callbacks in phases. Microtasks (promises) run between phases. Single-threaded but can handle many concurrent operations.",
+      "expected_keywords": ["event loop", "asynchronous", "phases", "callback", "non-blocking"],
+      "category": "node.js",
+      "difficulty": "hard"
+    },
+    {
+      "id": "node_003",
+      "question": "What is middleware in Express.js?",
+      "expected_answer": "Middleware are functions with access to request, response, and next. Execute in order, can modify req/res, end request, or call next(). Used for logging, authentication, parsing, error handling. App-level, router-level, or error-handling middleware.",
+      "expected_keywords": ["middleware", "Express", "request", "response", "next", "chain"],
+      "category": "node.js",
+      "difficulty": "medium"
+    }
+  ],
+  "typescript": [
+    {
+      "id": "ts_001",
+      "question": "What is TypeScript and why use it over JavaScript?",
+      "expected_answer": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Adds static typing, interfaces, enums, generics. Benefits include catching errors at compile-time, better IDE support, improved refactoring, self-documenting code.",
+      "expected_keywords": ["TypeScript", "static typing", "compile-time", "JavaScript", "types"],
+      "category": "typescript",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ts_002",
+      "question": "Explain interfaces vs types in TypeScript.",
+      "expected_answer": "Both define shapes of objects. Interfaces can be extended and merged, better for object shapes. Types can use unions, intersections, primitives, more flexible. Use interfaces for public API, types for complex compositions. Both work for most cases.",
+      "expected_keywords": ["interface", "type", "shape", "extend", "union", "object"],
+      "category": "typescript",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ts_003",
+      "question": "What are TypeScript generics and when to use them?",
+      "expected_answer": "Generics allow creating reusable components that work with multiple types. Use angle brackets <T> for type parameters. Common in arrays, promises, functions. Enable type safety while maintaining flexibility. Example: Array<T>, Promise<T>.",
+      "expected_keywords": ["generics", "type parameter", "reusable", "T", "flexible", "type-safe"],
+      "category": "typescript",
+      "difficulty": "medium"
+    }
+  ]
+}

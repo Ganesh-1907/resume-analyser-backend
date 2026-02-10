@@ -1,0 +1,47 @@
+{
+  "programming_languages": [
+    "Python", "Java", "JavaScript", "TypeScript", "C++", "C#", ".NET",
+    "Go", "Rust", "PHP", "Ruby", "Swift", "Kotlin", "Scala",
+    "R", "MATLAB", "SQL", "Bash", "PowerShell", "C", "Perl"
+  ],
+  "web_frameworks": [
+    "Django", "Flask", "FastAPI", "React", "Vue.js", "Angular",
+    "Spring Boot", "Express.js", "ASP.NET Core", "Laravel",
+    "Symfony", "Ruby on Rails", "Next.js", "Svelte", "Nuxt.js"
+  ],
+  "databases": [
+    "PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch",
+    "Firebase", "DynamoDB", "Cassandra", "Oracle", "SQL Server",
+    "Neo4j", "InfluxDB", "CouchDB", "MariaDB", "SQLite"
+  ],
+  "cloud_platforms": [
+    "AWS", "Google Cloud", "Azure", "Heroku", "DigitalOcean",
+    "Linode", "IBM Cloud", "Oracle Cloud", "Netlify", "Vercel"
+  ],
+  "devops_tools": [
+    "Docker", "Kubernetes", "Jenkins", "GitLab CI", "GitHub Actions",
+    "CircleCI", "Travis CI", "Terraform", "Ansible", "CloudFormation",
+    "Prometheus", "Grafana"
+  ],
+  "frontend_tools": [
+    "HTML", "CSS", "SASS", "SCSS", "Webpack", "Vite", "Babel",
+    "Bootstrap", "Tailwind CSS", "Material UI", "jQuery", "Sass"
+  ],
+  "testing_frameworks": [
+    "Jest", "Pytest", "Mocha", "Jasmine", "JUnit", "TestNG",
+    "RSpec", "Selenium", "Cypress", "Playwright", "Unittest"
+  ],
+  "ai_ml_tools": [
+    "TensorFlow", "PyTorch", "Scikit-learn", "Keras", "XGBoost",
+    "LightGBM", "Hugging Face", "OpenAI", "Pandas", "NumPy",
+    "Matplotlib", "Seaborn"
+  ],
+  "version_control": [
+    "Git", "GitHub", "GitLab", "Bitbucket", "SVN"
+  ],
+  "other_tools": [
+    "REST API", "GraphQL", "Microservices", "Message Queues",
+    "RabbitMQ", "Kafka", "Design Patterns", "SOLID Principles",
+    "System Design", "Agile", "Scrum"
+  ]
+}
