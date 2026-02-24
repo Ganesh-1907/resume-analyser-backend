@@ -1,0 +1,476 @@
+{
+  "users": {
+    "ganesh.bora@artofliving.org": {
+      "id": "edda7b60-dc5a-4315-a126-c564a8723dac",
+      "name": "ganesh",
+      "email": "ganesh.bora@artofliving.org",
+      "password_hash": "53d665b61599c883714db4602fe96ffd40b5ec1f04a889d8c08c2749dbdceff4",
+      "token": "80d5665e-9783-4110-8de4-8b464a466871",
+      "created_at": "2026-02-23T18:24:59Z",
+      "reports": [
+        {
+          "id": "d6a36434-0f06-48f1-9e27-e20c50eba945",
+          "date": "2026-02-23T18:29:14Z",
+          "interview_type": "audio",
+          "overall_score": 0.453,
+          "rating": "Fair",
+          "total_questions": 9,
+          "resume_name": "senior-full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Python",
+            "Java",
+            "JavaScript",
+            "Go",
+            "SQL",
+            "C",
+            "Django",
+            "React",
+            "Vue.js",
+            "Angular",
+            "CircleCI",
+            "Travis CI",
+            "HTML",
+            "CSS",
+            "Api",
+            "Restful",
+            "Node.Js",
+            "R",
+            "Bitbucket",
+            "Agile"
+          ],
+          "recommendations": [
+            "\ud83c\udf1f Excellent technical knowledge! Keep building on this strong foundation",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": [
+            {
+              "audio_score": 0,
+              "category": "sql",
+              "composite_score": 0.5292,
+              "content_score": {
+                "keyword_score": 1,
+                "keywords_found": [
+                  "INNER JOIN",
+                  "LEFT JOIN",
+                  "matching",
+                  "NULL",
+                  "tables"
+                ],
+                "length_score": 1,
+                "semantic_score": 0.804,
+                "total_score": 0.882
+              },
+              "difficulty": "easy",
+              "question": "What is the difference between INNER JOIN and LEFT JOIN?",
+              "transcription": "",
+              "user_answer": "An INNER JOIN returns only the rows that have matching values in both tables based on the join condition. If a record in either table does not have a corresponding match in the other table, it is excluded from the result. This join is useful when you want only the common data between two tables, such as retrieving users who have placed orders.\r\n\r\nA LEFT JOIN (or LEFT OUTER JOIN) returns all rows from the left table and the matching rows from the right table. If there is no match in the right table, the result will contain NULL values for the right table\u2019s columns. This join is helpful when you want to keep all records from the primary (left) table regardless of whether related data exists in the second table, such as listing all users along with their orders, including users who have not ordered anything.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "mongodb",
+              "composite_score": 0.42539999999999994,
+              "content_score": {
+                "keyword_score": 0.333,
+                "keywords_found": [
+                  "MongoDB",
+                  "schema-less"
+                ],
+                "length_score": 1,
+                "semantic_score": 0.848,
+                "total_score": 0.709
+              },
+              "difficulty": "easy",
+              "question": "What is MongoDB and how does it differ from SQL databases?",
+              "transcription": "",
+              "user_answer": "The main difference between MongoDB and SQL databases lies in their data model and schema design. SQL databases (like MySQL or PostgreSQL) use structured tables with fixed schemas, meaning the format of data must be predefined. MongoDB uses a schema-less (flexible schema) approach, allowing documents in the same collection to have different structures.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0.54,
+              "content_score": {
+                "keyword_score": 1,
+                "keywords_found": [
+                  "lifecycle",
+                  "mounting",
+                  "updating",
+                  "unmounting",
+                  "componentDidMount",
+                  "useEffect"
+                ],
+                "length_score": 1,
+                "semantic_score": 0.834,
+                "total_score": 0.9
+              },
+              "difficulty": "medium",
+              "question": "Explain React component lifecycle methods.",
+              "transcription": "",
+              "user_answer": "React component lifecycle methods are functions that run at specific stages of a class component\u2019s life. The lifecycle has three main phases: mounting, updating, and unmounting. During mounting, methods like constructor() initialize state and componentDidMount() runs after the component is inserted into the DOM, often used for API calls. During updating, shouldComponentUpdate() decides whether to re-render and componentDidUpdate() runs after updates to props or state. During unmounting, componentWillUnmount() is used for cleanup tasks like clearing timers or subscriptions. In modern React, functional components with Hooks such as useEffect are commonly preferred.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0.4068,
+              "content_score": {
+                "keyword_score": 0.444,
+                "keywords_found": [
+                  "then",
+                  "catch",
+                  "async",
+                  "await"
+                ],
+                "length_score": 0.66,
+                "semantic_score": 0.798,
+                "total_score": 0.678
+              },
+              "difficulty": "medium",
+              "question": "What are Promises in JavaScript and how do they work?",
+              "transcription": "",
+              "user_answer": "Promises are consumed using .then() for success and .catch() for errors. The .finally() method runs regardless of the outcome. Promises improve code readability and are the foundation for modern async patterns like async/await.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "java",
+              "composite_score": 0.39,
+              "content_score": {
+                "keyword_score": 0.2,
+                "keywords_found": [
+                  "garbage collection"
+                ],
+                "length_score": 0.62,
+                "semantic_score": 0.879,
+                "total_score": 0.65
+              },
+              "difficulty": "hard",
+              "question": "How does Java's garbage collection work?",
+              "transcription": "",
+              "user_answer": "Java\u2019s garbage collection (GC) automatically manages memory by removing objects that are no longer reachable from the program. Instead of developers freeing memory manually, the JVM identifies and cleans unused objects.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "python",
+              "composite_score": 0.41579999999999995,
+              "content_score": {
+                "keyword_score": 0.4,
+                "keywords_found": [
+                  "generator",
+                  "yield"
+                ],
+                "length_score": 0.8,
+                "semantic_score": 0.822,
+                "total_score": 0.693
+              },
+              "difficulty": "medium",
+              "question": "What are Python generators and why would you use them?",
+              "transcription": "",
+              "user_answer": "Python generators are special functions that produce values one at a time using the yield keyword instead of returning all results at once. When a generator function is called, it returns a generator object that maintains its state between iterations.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "java",
+              "composite_score": 0.429,
+              "content_score": {
+                "keyword_score": 0.4,
+                "keywords_found": [
+                  "overloading",
+                  "polymorphism"
+                ],
+                "length_score": 0.92,
+                "semantic_score": 0.839,
+                "total_score": 0.715
+              },
+              "difficulty": "easy",
+              "question": "What is method overloading and overriding in Java?",
+              "transcription": "",
+              "user_answer": "Method Overloading occurs when multiple methods in the same class have the same name but different parameter lists (different number, type, or order of parameters). It is resolved at compile time (compile-time polymorphism). Overloading improves code readability and flexibility. Return type alone cannot differentiate overloaded methods.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0.4698,
+              "content_score": {
+                "keyword_score": 0.6,
+                "keywords_found": [
+                  "closure",
+                  "scope",
+                  "outer function"
+                ],
+                "length_score": 0.76,
+                "semantic_score": 0.878,
+                "total_score": 0.783
+              },
+              "difficulty": "medium",
+              "question": "Explain closures in JavaScript with an example.",
+              "transcription": "",
+              "user_answer": "A closure in JavaScript is created when a function remembers and can access variables from its outer (lexical) scope even after the outer function has finished executing. Closures allow data privacy and help maintain state between function calls.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "python",
+              "composite_score": 0.4722,
+              "content_score": {
+                "keyword_score": 0.667,
+                "keywords_found": [
+                  "GIL",
+                  "concurrency",
+                  "CPU-bound",
+                  "I/O-bound"
+                ],
+                "length_score": 1,
+                "semantic_score": 0.811,
+                "total_score": 0.787
+              },
+              "difficulty": "hard",
+              "question": "How does Python's Global Interpreter Lock (GIL) affect multithreading?",
+              "transcription": "",
+              "user_answer": "Impact on multithreading:\r\n\r\nFor CPU-bound tasks (heavy computations), the GIL becomes a bottleneck because threads cannot run truly in parallel on multiple CPU cores. Multithreading may not improve performance and can even slow it due to context switching.\r\n\r\nFor I/O-bound tasks (network calls, file operations), threads often release the GIL while waiting for I/O. In these cases, multithreading still provides good concurrency and performance benefits.",
+              "video_score": 0
+            }
+          ]
+        },
+        {
+          "id": "f1df2ba9-6978-4e8e-870e-dbd112de7732",
+          "date": "2026-02-23T18:29:14Z",
+          "interview_type": "audio",
+          "overall_score": 0.453,
+          "rating": "Fair",
+          "total_questions": 9,
+          "resume_name": "senior-full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Python",
+            "Java",
+            "JavaScript",
+            "Go",
+            "SQL",
+            "C",
+            "Django",
+            "React",
+            "Vue.js",
+            "Angular",
+            "CircleCI",
+            "Travis CI",
+            "HTML",
+            "CSS",
+            "Api",
+            "Restful",
+            "Node.Js",
+            "R",
+            "Bitbucket",
+            "Agile"
+          ],
+          "recommendations": [
+            "\ud83c\udf1f Excellent technical knowledge! Keep building on this strong foundation",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": [
+            {
+              "audio_score": 0,
+              "category": "sql",
+              "composite_score": 0.5292,
+              "content_score": {
+                "keyword_score": 1,
+                "keywords_found": [
+                  "INNER JOIN",
+                  "LEFT JOIN",
+                  "matching",
+                  "NULL",
+                  "tables"
+                ],
+                "length_score": 1,
+                "semantic_score": 0.804,
+                "total_score": 0.882
+              },
+              "difficulty": "easy",
+              "question": "What is the difference between INNER JOIN and LEFT JOIN?",
+              "transcription": "",
+              "user_answer": "An INNER JOIN returns only the rows that have matching values in both tables based on the join condition. If a record in either table does not have a corresponding match in the other table, it is excluded from the result. This join is useful when you want only the common data between two tables, such as retrieving users who have placed orders.\r\n\r\nA LEFT JOIN (or LEFT OUTER JOIN) returns all rows from the left table and the matching rows from the right table. If there is no match in the right table, the result will contain NULL values for the right table\u2019s columns. This join is helpful when you want to keep all records from the primary (left) table regardless of whether related data exists in the second table, such as listing all users along with their orders, including users who have not ordered anything.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "mongodb",
+              "composite_score": 0.42539999999999994,
+              "content_score": {
+                "keyword_score": 0.333,
+                "keywords_found": [
+                  "MongoDB",
+                  "schema-less"
+                ],
+                "length_score": 1,
+                "semantic_score": 0.848,
+                "total_score": 0.709
+              },
+              "difficulty": "easy",
+              "question": "What is MongoDB and how does it differ from SQL databases?",
+              "transcription": "",
+              "user_answer": "The main difference between MongoDB and SQL databases lies in their data model and schema design. SQL databases (like MySQL or PostgreSQL) use structured tables with fixed schemas, meaning the format of data must be predefined. MongoDB uses a schema-less (flexible schema) approach, allowing documents in the same collection to have different structures.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0.54,
+              "content_score": {
+                "keyword_score": 1,
+                "keywords_found": [
+                  "lifecycle",
+                  "mounting",
+                  "updating",
+                  "unmounting",
+                  "componentDidMount",
+                  "useEffect"
+                ],
+                "length_score": 1,
+                "semantic_score": 0.834,
+                "total_score": 0.9
+              },
+              "difficulty": "medium",
+              "question": "Explain React component lifecycle methods.",
+              "transcription": "",
+              "user_answer": "React component lifecycle methods are functions that run at specific stages of a class component\u2019s life. The lifecycle has three main phases: mounting, updating, and unmounting. During mounting, methods like constructor() initialize state and componentDidMount() runs after the component is inserted into the DOM, often used for API calls. During updating, shouldComponentUpdate() decides whether to re-render and componentDidUpdate() runs after updates to props or state. During unmounting, componentWillUnmount() is used for cleanup tasks like clearing timers or subscriptions. In modern React, functional components with Hooks such as useEffect are commonly preferred.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0.4068,
+              "content_score": {
+                "keyword_score": 0.444,
+                "keywords_found": [
+                  "then",
+                  "catch",
+                  "async",
+                  "await"
+                ],
+                "length_score": 0.66,
+                "semantic_score": 0.798,
+                "total_score": 0.678
+              },
+              "difficulty": "medium",
+              "question": "What are Promises in JavaScript and how do they work?",
+              "transcription": "",
+              "user_answer": "Promises are consumed using .then() for success and .catch() for errors. The .finally() method runs regardless of the outcome. Promises improve code readability and are the foundation for modern async patterns like async/await.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "java",
+              "composite_score": 0.39,
+              "content_score": {
+                "keyword_score": 0.2,
+                "keywords_found": [
+                  "garbage collection"
+                ],
+                "length_score": 0.62,
+                "semantic_score": 0.879,
+                "total_score": 0.65
+              },
+              "difficulty": "hard",
+              "question": "How does Java's garbage collection work?",
+              "transcription": "",
+              "user_answer": "Java\u2019s garbage collection (GC) automatically manages memory by removing objects that are no longer reachable from the program. Instead of developers freeing memory manually, the JVM identifies and cleans unused objects.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "python",
+              "composite_score": 0.41579999999999995,
+              "content_score": {
+                "keyword_score": 0.4,
+                "keywords_found": [
+                  "generator",
+                  "yield"
+                ],
+                "length_score": 0.8,
+                "semantic_score": 0.822,
+                "total_score": 0.693
+              },
+              "difficulty": "medium",
+              "question": "What are Python generators and why would you use them?",
+              "transcription": "",
+              "user_answer": "Python generators are special functions that produce values one at a time using the yield keyword instead of returning all results at once. When a generator function is called, it returns a generator object that maintains its state between iterations.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "java",
+              "composite_score": 0.429,
+              "content_score": {
+                "keyword_score": 0.4,
+                "keywords_found": [
+                  "overloading",
+                  "polymorphism"
+                ],
+                "length_score": 0.92,
+                "semantic_score": 0.839,
+                "total_score": 0.715
+              },
+              "difficulty": "easy",
+              "question": "What is method overloading and overriding in Java?",
+              "transcription": "",
+              "user_answer": "Method Overloading occurs when multiple methods in the same class have the same name but different parameter lists (different number, type, or order of parameters). It is resolved at compile time (compile-time polymorphism). Overloading improves code readability and flexibility. Return type alone cannot differentiate overloaded methods.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0.4698,
+              "content_score": {
+                "keyword_score": 0.6,
+                "keywords_found": [
+                  "closure",
+                  "scope",
+                  "outer function"
+                ],
+                "length_score": 0.76,
+                "semantic_score": 0.878,
+                "total_score": 0.783
+              },
+              "difficulty": "medium",
+              "question": "Explain closures in JavaScript with an example.",
+              "transcription": "",
+              "user_answer": "A closure in JavaScript is created when a function remembers and can access variables from its outer (lexical) scope even after the outer function has finished executing. Closures allow data privacy and help maintain state between function calls.",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "python",
+              "composite_score": 0.4722,
+              "content_score": {
+                "keyword_score": 0.667,
+                "keywords_found": [
+                  "GIL",
+                  "concurrency",
+                  "CPU-bound",
+                  "I/O-bound"
+                ],
+                "length_score": 1,
+                "semantic_score": 0.811,
+                "total_score": 0.787
+              },
+              "difficulty": "hard",
+              "question": "How does Python's Global Interpreter Lock (GIL) affect multithreading?",
+              "transcription": "",
+              "user_answer": "Impact on multithreading:\r\n\r\nFor CPU-bound tasks (heavy computations), the GIL becomes a bottleneck because threads cannot run truly in parallel on multiple CPU cores. Multithreading may not improve performance and can even slow it due to context switching.\r\n\r\nFor I/O-bound tasks (network calls, file operations), threads often release the GIL while waiting for I/O. In these cases, multithreading still provides good concurrency and performance benefits.",
+              "video_score": 0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
