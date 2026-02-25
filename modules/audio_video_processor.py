@@ -88,10 +88,15 @@ class AudioVideoProcessor:
             rms = librosa.feature.rms(y=y)[0]
             avg_rms = np.mean(rms)
             
+            # Detect silence / Very low energy
+            if avg_rms < 0.001 or avg_spectral_centroid < 100:
+                return self._get_default_audio_analysis()
+
             # Calculate quality score (0-100)
             duration_score = min(50.0, (duration / 30) * 50)  # Up to 50 points
             clarity_score = min(30.0, avg_rms * 1000)  # Up to 30 points
-            consistency_score = min(20.0, (1 - np.std(rms)) * 100)  # Up to 20 points
+            # Only reward consistency if there is actual clear audio signal
+            consistency_score = min(20.0, (1 - np.std(rms)) * 100) if avg_rms > 0.005 else 0
             quality_score = duration_score + clarity_score + consistency_score
             
             # Detect speaking pace
@@ -121,15 +126,15 @@ class AudioVideoProcessor:
             return self._get_default_audio_analysis()
     
     def _get_default_audio_analysis(self):
-        """Return default audio analysis when libraries unavailable"""
+        """Return default audio analysis when libraries unavailable or audio is silent"""
         return {
             "duration_seconds": 0,
-            "quality_score": 50,  # Default medium score
-            "clarity_score": 50,
-            "speaking_pace": "normal",
+            "quality_score": 0,  # Default zero score for silence/failures
+            "clarity_score": 0,
+            "speaking_pace": "unknown",
             "audio_energy": 0,
             "spectral_quality": 0,
-            "volume_consistency": 0.5
+            "volume_consistency": 0
         }
     
     def extract_audio_from_video(self, video_path: str, output_audio_path: str = None) -> str:
@@ -281,15 +286,15 @@ class AudioVideoProcessor:
             return self._get_default_video_analysis()
     
     def _get_default_video_analysis(self):
-        """Return default video analysis when processing fails"""
+        """Return default video analysis when processing fails or no face found"""
         return {
             "video_duration": 0,
             "frames_analyzed": 0,
-            "face_visibility_percentage": 50,
-            "eye_contact_percentage": 50,
-            "confidence_score": 50,
+            "face_visibility_percentage": 0,
+            "eye_contact_percentage": 0,
+            "confidence_score": 0,
             "lighting_quality": "unknown",
-            "average_brightness": 100,
+            "average_brightness": 0,
             "posture_quality": "unknown"
         }
     
@@ -355,8 +360,8 @@ class AudioVideoProcessor:
         print(f"✅ Video confidence score: {video_analysis['confidence_score']:.1f}/100")
         
         # Step 5: Calculate overall presentation score
-        audio_score = results["audio_analysis"].get("quality_score", 50)
-        video_score = results["video_analysis"].get("confidence_score", 50)
+        audio_score = results["audio_analysis"].get("quality_score", 0)
+        video_score = results["video_analysis"].get("confidence_score", 0)
         
         # Weighted average: 50% audio quality, 50% video confidence
         overall_score = (audio_score * 0.5 + video_score * 0.5)

@@ -78,6 +78,17 @@ class SimilarityMatcher:
                        expected_keywords: List[str]) -> Dict:
         """Evaluate user answer using semantic similarity + keywords + length"""
         
+        # Check for empty or placeholder responses
+        is_empty = not user_answer or len(user_answer.split()) < 2 or "no answer provided" in user_answer.lower()
+        if is_empty:
+            return {
+                "semantic_score": 0,
+                "keyword_score": 0,
+                "length_score": 0,
+                "total_score": 0,
+                "keywords_found": []
+            }
+        
         # Semantic similarity (60% weight)
         semantic_score = self.semantic_similarity(user_answer, expected_answer)
         

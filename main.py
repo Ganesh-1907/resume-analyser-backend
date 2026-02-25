@@ -300,8 +300,9 @@ def start_interview():
         top_skills = all_skills[:15] if len(all_skills) > 15 else all_skills
 
         print(f"\n📋 Selected {len(top_skills)} skills for interview")
-
-        interview_engine = InterviewEngine(top_skills, similarity_matcher=similarity_matcher)
+        
+        interview_type = request.json.get('interview_type', 'audio') if request.is_json else 'audio'
+        interview_engine = InterviewEngine(top_skills, similarity_matcher=similarity_matcher, interview_type=interview_type)
 
         return jsonify({
             "success": True,
@@ -426,10 +427,14 @@ def submit_answer():
                 traceback.print_exc()
 
         if not user_answer or len(user_answer.strip()) == 0:
-            return jsonify({
-                "success": False,
-                "error": "No answer provided. Please record your answer or type a response."
-            }), 400
+            # If no answer provided (e.g. timeout or processing failure), use a placeholder
+            # so the interview can continue to the next question.
+            if 'video_file' in request.files or 'audio_file' in request.files:
+                user_answer = "[Transcription unavailable - please ensure FFmpeg is installed on server]"
+            else:
+                user_answer = "[No answer provided before timeout]"
+            
+            transcription_display = "No answer recorded"
 
         evaluation = interview_engine.submit_answer(
             question_id,
@@ -483,7 +488,8 @@ def get_interview_summary():
             "success": True,
             "interview_summary": interview_summary,
             "final_report": final_report,
-            "resume_filename": current_user.get('resume_filename', '')
+            "resume_filename": current_user.get('resume_filename', ''),
+            "interview_type": interview_summary.get('session_info', {}).get('interview_type', 'audio')
         })
     except Exception as e:
         print(f"❌ Error getting summary: {e}")

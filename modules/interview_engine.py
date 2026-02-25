@@ -5,12 +5,14 @@ from datetime import datetime
 from modules.similarity_matcher import SimilarityMatcher
 
 class InterviewEngine:
-    def __init__(self, user_skills: List[str], similarity_matcher: SimilarityMatcher = None):
+    def __init__(self, user_skills: List[str], similarity_matcher: SimilarityMatcher = None, interview_type: str = "audio"):
         self.user_skills = [skill.lower() for skill in user_skills]
         self.matcher = similarity_matcher if similarity_matcher else SimilarityMatcher()
         self.qa_database = self._load_qa_database()
+        self.interview_type = interview_type
         self.interview_session = {
             "start_time": datetime.now().isoformat(),
+            "interview_type": self.interview_type,
             "questions": [],
             "answers": [],
             "transcriptions": [],
@@ -20,7 +22,7 @@ class InterviewEngine:
             "total_score": 0
         }
         self.asked_questions = set()
-        self.total_questions = 10  # Fixed limit
+        self.total_questions = 10  # Initial target, will be adjusted
         self.questions_per_skill = {}
         self.skill_coverage = {}  # Track which skills have been asked
     
@@ -109,17 +111,25 @@ class InterviewEngine:
         distribution = {}
         available_skills = list(available_skill_mappings.values())
         
-        # If we have MORE skills than questions (e.g., 15 skills, 10 questions)
+        # Adjust total_questions if we don't have enough skills
+        target_total = 10
+        
+        # If we have MORE skills than target (e.g., 15 skills, 10 questions)
         # Select top 10 skills
-        if len(available_skills) >= self.total_questions:
+        if len(available_skills) >= target_total:
+            self.total_questions = target_total
             selected_skills = available_skills[:self.total_questions]
             for skill in selected_skills:
                 distribution[skill] = 1
             print(f"   📌 Strategy: 1 question each from {self.total_questions} different skills")
         
-        # If we have FEWER skills than questions (e.g., 6 skills, 10 questions)
+        # If we have FEWER skills than target (e.g., 6 skills, 10 questions)
         # Give 1 question to each skill, then distribute remaining
         else:
+            # First, check total available questions across these skills
+            total_available_questions = sum(len(self.qa_database[s]) for s in available_skills)
+            self.total_questions = min(target_total, total_available_questions)
+            
             # First, give 1 question to each skill
             for skill in available_skills:
                 distribution[skill] = 1
@@ -129,9 +139,17 @@ class InterviewEngine:
             # Distribute remaining questions evenly
             for i in range(remaining):
                 skill_to_add = available_skills[i % len(available_skills)]
-                distribution[skill_to_add] += 1
+                # Check if this skill has more questions
+                if distribution[skill_to_add] < len(self.qa_database[skill_to_add]):
+                    distribution[skill_to_add] += 1
+                else:
+                    # Look for another skill that has more questions
+                    for other_skill in available_skills:
+                        if distribution[other_skill] < len(self.qa_database[other_skill]):
+                            distribution[other_skill] += 1
+                            break
             
-            print(f"   📌 Strategy: Each skill gets ≥1 question, {remaining} extra distributed")
+            print(f"   📌 Strategy: Each skill gets ≥1 question, {remaining} extra distributed. Adjusted total: {self.total_questions}")
         
         print(f"   📋 Distribution: {distribution}")
         
@@ -315,6 +333,7 @@ class InterviewEngine:
         return {
             "session_info": {
                 "start_time": self.interview_session["start_time"],
+                "interview_type": self.interview_session.get("interview_type", "audio"),
                 "questions_asked": len(self.interview_session["questions"]),
                 "duration_seconds": (datetime.now() - datetime.fromisoformat(self.interview_session["start_time"])).total_seconds()
             },
