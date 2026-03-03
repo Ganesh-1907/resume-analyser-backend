@@ -9,6 +9,217 @@
       "created_at": "2026-02-23T18:24:59Z",
       "reports": [
         {
+          "id": "0201d416-e526-4b73-80cd-c43a898eaacd",
+          "date": "2026-03-03T06:11:49Z",
+          "interview_type": "video",
+          "overall_score": 0.006,
+          "rating": "Needs Improvement",
+          "total_questions": 10,
+          "resume_name": "senior-full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Python",
+            "Java",
+            "JavaScript",
+            "Go",
+            "SQL",
+            "C",
+            "Django",
+            "React",
+            "Vue.js",
+            "Angular",
+            "CircleCI",
+            "Travis CI",
+            "HTML",
+            "CSS",
+            "Restful",
+            "Api",
+            "Node.Js",
+            "R",
+            "Bitbucket",
+            "Agile"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": [
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "easy",
+              "question": "What is the difference between var, let, and const in JavaScript?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "Explain React component lifecycle methods.",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "java",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "Explain the concept of Java Collections Framework.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "sql",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "What are indexes in databases and when to use them?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "mongodb",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "easy",
+              "question": "What is MongoDB and how does it differ from SQL databases?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "python",
+              "composite_score": 0.0276,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0.044,
+                "total_score": 0.046
+              },
+              "difficulty": "hard",
+              "question": "How does Python's Global Interpreter Lock (GIL) affect multithreading?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "python",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What are Python decorators and how do you use them?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "java",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "What is the difference between abstract classes and interfaces in Java?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "easy",
+              "question": "What is destructuring in JavaScript?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "python",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "easy",
+              "question": "How do you handle exceptions in Python? Explain try-except blocks with an example.",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            }
+          ]
+        },
+        {
           "id": "e873098d-96d3-423f-873a-4a1f2172d473",
           "date": "2026-02-25T19:21:28Z",
           "interview_type": "audio",

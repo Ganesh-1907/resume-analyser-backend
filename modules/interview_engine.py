@@ -5,7 +5,7 @@ from datetime import datetime
 from modules.similarity_matcher import SimilarityMatcher
 
 class InterviewEngine:
-    def __init__(self, user_skills: List[str], similarity_matcher: SimilarityMatcher = None, interview_type: str = "audio"):
+    def __init__(self, user_skills: List[str], similarity_matcher: SimilarityMatcher = None, interview_type: str = "audio", persistent_asked_questions: List[str] = None):
         self.user_skills = [skill.lower() for skill in user_skills]
         self.matcher = similarity_matcher if similarity_matcher else SimilarityMatcher()
         self.qa_database = self._load_qa_database()
@@ -21,7 +21,7 @@ class InterviewEngine:
             "content_scores": [],
             "total_score": 0
         }
-        self.asked_questions = set()
+        self.asked_questions = set(persistent_asked_questions) if persistent_asked_questions else set()
         self.total_questions = 10  # Initial target, will be adjusted
         self.questions_per_skill = {}
         self.skill_coverage = {}  # Track which skills have been asked

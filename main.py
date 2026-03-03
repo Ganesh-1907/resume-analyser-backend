@@ -108,7 +108,8 @@ def register():
         "password_hash": hash_password(password),
         "token": token,
         "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-        "reports": []
+        "reports": [],
+        "asked_questions": []
     }
     save_data(db)
 
@@ -302,7 +303,21 @@ def start_interview():
         print(f"\n📋 Selected {len(top_skills)} skills for interview")
         
         interview_type = request.json.get('interview_type', 'audio') if request.is_json else 'audio'
-        interview_engine = InterviewEngine(top_skills, similarity_matcher=similarity_matcher, interview_type=interview_type)
+        
+        # Load persistent asked questions if user is logged in
+        asked_questions = []
+        token = request.headers.get('Authorization', '').replace('Bearer ', '')
+        user = get_user_from_token(token)
+        if user:
+            asked_questions = user.get('asked_questions', [])
+            print(f"   🔄 Loaded {len(asked_questions)} previously asked questions for {user['name']}")
+
+        interview_engine = InterviewEngine(
+            top_skills, 
+            similarity_matcher=similarity_matcher, 
+            interview_type=interview_type,
+            persistent_asked_questions=asked_questions
+        )
 
         return jsonify({
             "success": True,
@@ -443,6 +458,22 @@ def submit_answer():
             video_analysis=video_analysis,
             transcription=transcription
         )
+
+        # Persist newly asked question if user is logged in
+        token = request.headers.get('Authorization', '').replace('Bearer ', '')
+        user = get_user_from_token(token)
+        if user:
+            db = load_data()
+            email = user['email']
+            if 'asked_questions' not in db['users'][email]:
+                db['users'][email]['asked_questions'] = []
+            
+            if question_id not in db['users'][email]['asked_questions']:
+                db['users'][email]['asked_questions'].append(question_id)
+                # Keep only last 100 to prevent bloat but avoid repeats
+                db['users'][email]['asked_questions'] = db['users'][email]['asked_questions'][-100:]
+                save_data(db)
+                print(f"   💾 Saved question {question_id} to user {email}'s history")
 
         evaluation = convert_to_serializable(evaluation)
 
