@@ -349,7 +349,7 @@ def get_next_question():
                 "interview_complete": True
             })
 
-        current_num = len(interview_engine.asked_questions)
+        current_num = len(interview_engine.interview_session["questions"]) + 1
         total = interview_engine.total_questions
 
         return jsonify({

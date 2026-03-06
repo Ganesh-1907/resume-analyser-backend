@@ -165,7 +165,7 @@ class InterviewEngine:
         Priority: Ask from skills that haven't been covered yet.
         """
         # Check if we've reached the limit
-        if len(self.asked_questions) >= self.total_questions:
+        if len(self.interview_session["questions"]) >= self.total_questions:
             return None
         
         # First call - plan the distribution

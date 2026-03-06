@@ -9,6 +9,1504 @@
       "created_at": "2026-02-23T18:24:59Z",
       "reports": [
         {
+          "id": "f8632b34-e820-4423-9efc-514606e597a1",
+          "date": "2026-03-06T15:38:43Z",
+          "interview_type": "audio",
+          "overall_score": 0.017,
+          "rating": "Needs Improvement",
+          "total_questions": 10,
+          "resume_name": "full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Java",
+            "JavaScript",
+            ".NET",
+            "C",
+            "React",
+            "Angular",
+            "AWS",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub",
+            "REST API",
+            "Spring",
+            "Node.Js",
+            "Api",
+            "R",
+            "Design Patterns",
+            "Agile",
+            "Scrum"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": [
+            {
+              "audio_score": 0,
+              "category": "ios",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "Explain delegation pattern in iOS.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "typescript",
+              "composite_score": 0.0366,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0.069,
+                "total_score": 0.061
+              },
+              "difficulty": "easy",
+              "question": "What is TypeScript and why use it over JavaScript?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "flutter",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "How does Flutter's hot reload work?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "docker",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "hard",
+              "question": "Explain Docker networking modes.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "docker",
+              "composite_score": 0.013199999999999998,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0.004,
+                "total_score": 0.022
+              },
+              "difficulty": "medium",
+              "question": "What is a Dockerfile and what are its key instructions?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "sql",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "easy",
+              "question": "What is the difference between INNER JOIN and LEFT JOIN?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "kubernetes",
+              "composite_score": 0.021599999999999998,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0.026,
+                "total_score": 0.036
+              },
+              "difficulty": "medium",
+              "question": "What is Kubernetes and what are its main components?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "docker",
+              "composite_score": 0.0276,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0.043,
+                "total_score": 0.046
+              },
+              "difficulty": "medium",
+              "question": "What is Docker Compose and when would you use it?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "kubernetes",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "easy",
+              "question": "Explain Kubernetes Pods and why they are needed.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "kubernetes",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What are Kubernetes ConfigMaps and Secrets?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            }
+          ]
+        },
+        {
+          "id": "3074a685-6069-479b-9f15-2abe54d659fd",
+          "date": "2026-03-06T15:37:59Z",
+          "interview_type": "audio",
+          "overall_score": 0.012,
+          "rating": "Needs Improvement",
+          "total_questions": 10,
+          "resume_name": "full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Java",
+            "JavaScript",
+            ".NET",
+            "C",
+            "React",
+            "Angular",
+            "AWS",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub",
+            "REST API",
+            "Spring",
+            "Node.Js",
+            "Api",
+            "R",
+            "Design Patterns",
+            "Agile",
+            "Scrum"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": [
+            {
+              "audio_score": 0,
+              "category": "git",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What is the difference between git merge and git rebase?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "node.js",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "hard",
+              "question": "Explain the Event Loop in Node.js.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "android",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What are Android Fragments and when to use them?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "flutter",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "hard",
+              "question": "Explain Flutter's state management approaches.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "docker",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "easy",
+              "question": "What is Docker and what problems does it solve?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "ci/cd",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "easy",
+              "question": "What is CI/CD and why is it important?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "flutter",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What is the widget tree in Flutter?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "kubernetes",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What is the difference between Deployment and StatefulSet?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "ci/cd",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What is the difference between Jenkins and GitHub Actions?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "ios",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "hard",
+              "question": "What is ARC in iOS and how does it work?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            }
+          ]
+        },
+        {
+          "id": "be988801-4c1e-417e-91b9-971e1aeb7007",
+          "date": "2026-03-06T15:36:31Z",
+          "interview_type": "video",
+          "overall_score": 0.003,
+          "rating": "Needs Improvement",
+          "total_questions": 10,
+          "resume_name": "full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Java",
+            "JavaScript",
+            ".NET",
+            "C",
+            "React",
+            "Angular",
+            "AWS",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub",
+            "REST API",
+            "Spring",
+            "Node.Js",
+            "Api",
+            "R",
+            "Design Patterns",
+            "Agile",
+            "Scrum"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": [
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0.0168,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0.013,
+                "total_score": 0.028
+              },
+              "difficulty": "hard",
+              "question": "Explain the event loop in JavaScript.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "easy",
+              "question": "What is the difference between props and state in React?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "node.js",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "easy",
+              "question": "What is Node.js and what makes it different from browser JavaScript?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "git",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "What is git cherry-pick and when to use it?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "aws",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "hard",
+              "question": "Explain AWS VPC and its components.",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "What is React Context API and when should you use it?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "Explain React component lifecycle methods.",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "Explain useEffect hook and its use cases.",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "aws",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "easy",
+              "question": "What is AWS EC2 and what are its use cases?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "aws",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "Explain the difference between S3 storage classes.",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            }
+          ]
+        },
+        {
+          "id": "203e83e7-d81f-402b-93a4-f773cec714fd",
+          "date": "2026-03-06T14:55:44Z",
+          "interview_type": "video",
+          "overall_score": 0.003,
+          "rating": "Needs Improvement",
+          "total_questions": 10,
+          "resume_name": "full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Java",
+            "JavaScript",
+            ".NET",
+            "C",
+            "React",
+            "Angular",
+            "AWS",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub",
+            "REST API",
+            "Spring",
+            "Node.Js",
+            "Api",
+            "R",
+            "Design Patterns",
+            "Agile",
+            "Scrum"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": [
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0.0168,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0.013,
+                "total_score": 0.028
+              },
+              "difficulty": "hard",
+              "question": "Explain the event loop in JavaScript.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "easy",
+              "question": "What is the difference between props and state in React?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "node.js",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "easy",
+              "question": "What is Node.js and what makes it different from browser JavaScript?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "git",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "What is git cherry-pick and when to use it?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "aws",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "hard",
+              "question": "Explain AWS VPC and its components.",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "What is React Context API and when should you use it?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "Explain React component lifecycle methods.",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "Explain useEffect hook and its use cases.",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "aws",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "easy",
+              "question": "What is AWS EC2 and what are its use cases?",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "aws",
+              "composite_score": 0,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0,
+                "semantic_score": 0,
+                "total_score": 0
+              },
+              "difficulty": "medium",
+              "question": "Explain the difference between S3 storage classes.",
+              "transcription": "",
+              "user_answer": "[No answer provided]",
+              "video_score": 0
+            }
+          ]
+        },
+        {
+          "id": "7b4c4328-1db6-4440-85f6-e6a7facdf21f",
+          "date": "2026-03-06T14:47:19Z",
+          "interview_type": "audio",
+          "overall_score": 0.014,
+          "rating": "Needs Improvement",
+          "total_questions": 10,
+          "resume_name": "full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Java",
+            "JavaScript",
+            ".NET",
+            "C",
+            "React",
+            "Angular",
+            "AWS",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub",
+            "REST API",
+            "Spring",
+            "Node.Js",
+            "Api",
+            "R",
+            "Design Patterns",
+            "Agile",
+            "Scrum"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": [
+            {
+              "audio_score": 0,
+              "category": "git",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "Explain Git branching strategies.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "Explain the Virtual DOM in React.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "aws",
+              "composite_score": 0.0204,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0.023,
+                "total_score": 0.034
+              },
+              "difficulty": "medium",
+              "question": "What is AWS Lambda and when would you use it?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "node.js",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What is middleware in Express.js?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "java",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "Explain the Singleton design pattern in Java.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "Explain arrow functions and their differences from regular functions.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "java",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What is the difference between abstract classes and interfaces in Java?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "easy",
+              "question": "What is destructuring in JavaScript?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "java",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "hard",
+              "question": "How does Java's garbage collection work?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0.0246,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0.035,
+                "total_score": 0.041
+              },
+              "difficulty": "easy",
+              "question": "What is the difference between var, let, and const in JavaScript?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            }
+          ]
+        },
+        {
+          "id": "a786b9f3-a094-42cb-9881-532b8353fca7",
+          "date": "2026-03-06T14:45:43Z",
+          "interview_type": "audio",
+          "overall_score": 0,
+          "rating": "Needs Improvement",
+          "total_questions": 0,
+          "resume_name": "full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Java",
+            "JavaScript",
+            ".NET",
+            "C",
+            "React",
+            "Angular",
+            "AWS",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub",
+            "REST API",
+            "Api",
+            "Spring",
+            "Node.Js",
+            "R",
+            "Design Patterns",
+            "Agile",
+            "Scrum"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": []
+        },
+        {
+          "id": "374e192d-6a1f-47ca-a060-8ad72d68e41c",
+          "date": "2026-03-06T14:45:25Z",
+          "interview_type": "audio",
+          "overall_score": 0,
+          "rating": "Needs Improvement",
+          "total_questions": 0,
+          "resume_name": "full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Java",
+            "JavaScript",
+            ".NET",
+            "C",
+            "React",
+            "Angular",
+            "AWS",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub",
+            "REST API",
+            "Api",
+            "Spring",
+            "Node.Js",
+            "R",
+            "Design Patterns",
+            "Agile",
+            "Scrum"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": []
+        },
+        {
+          "id": "d030d2e5-6503-4354-b1be-e82091c7fd4a",
+          "date": "2026-03-06T14:39:58Z",
+          "interview_type": "audio",
+          "overall_score": 0,
+          "rating": "Needs Improvement",
+          "total_questions": 0,
+          "resume_name": "full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Java",
+            "JavaScript",
+            ".NET",
+            "C",
+            "React",
+            "Angular",
+            "AWS",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub",
+            "REST API",
+            "Api",
+            "Spring",
+            "Node.Js",
+            "R",
+            "Design Patterns",
+            "Agile",
+            "Scrum"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": []
+        },
+        {
+          "id": "fa1cf541-ef48-4c77-bd06-624fdde32f82",
+          "date": "2026-03-06T14:37:42Z",
+          "interview_type": "audio",
+          "overall_score": 0,
+          "rating": "Needs Improvement",
+          "total_questions": 0,
+          "resume_name": "senior-full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Python",
+            "Java",
+            "JavaScript",
+            "Go",
+            "SQL",
+            "C",
+            "Django",
+            "React",
+            "Vue.js",
+            "Angular",
+            "CircleCI",
+            "Travis CI",
+            "HTML",
+            "CSS",
+            "Restful",
+            "Api",
+            "Node.Js",
+            "R",
+            "Bitbucket",
+            "Agile"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": []
+        },
+        {
+          "id": "31516088-09db-4e00-9a5b-5d0e998431b4",
+          "date": "2026-03-06T14:35:44Z",
+          "interview_type": "video",
+          "overall_score": 0,
+          "rating": "Needs Improvement",
+          "total_questions": 0,
+          "resume_name": "senior-full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Python",
+            "Java",
+            "JavaScript",
+            "Go",
+            "SQL",
+            "C",
+            "Django",
+            "React",
+            "Vue.js",
+            "Angular",
+            "CircleCI",
+            "Travis CI",
+            "HTML",
+            "CSS",
+            "Restful",
+            "Api",
+            "Node.Js",
+            "R",
+            "Bitbucket",
+            "Agile"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": []
+        },
+        {
+          "id": "aa59ed63-19ae-4216-b781-7798560b528c",
+          "date": "2026-03-06T14:35:16Z",
+          "interview_type": "video",
+          "overall_score": 0,
+          "rating": "Needs Improvement",
+          "total_questions": 0,
+          "resume_name": "senior-full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Python",
+            "Java",
+            "JavaScript",
+            "Go",
+            "SQL",
+            "C",
+            "Django",
+            "React",
+            "Vue.js",
+            "Angular",
+            "CircleCI",
+            "Travis CI",
+            "HTML",
+            "CSS",
+            "Restful",
+            "Api",
+            "Node.Js",
+            "R",
+            "Bitbucket",
+            "Agile"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": []
+        },
+        {
+          "id": "c66cbc86-5931-4a7f-9074-2a66d43f5cf7",
+          "date": "2026-03-06T14:34:57Z",
+          "interview_type": "audio",
+          "overall_score": 0.012,
+          "rating": "Needs Improvement",
+          "total_questions": 10,
+          "resume_name": "senior-full-stack-developer-resume-example.pdf",
+          "skills": [
+            "Python",
+            "Java",
+            "JavaScript",
+            "Go",
+            "SQL",
+            "C",
+            "Django",
+            "React",
+            "Vue.js",
+            "Angular",
+            "CircleCI",
+            "Travis CI",
+            "HTML",
+            "CSS",
+            "Restful",
+            "Api",
+            "Node.Js",
+            "R",
+            "Bitbucket",
+            "Agile"
+          ],
+          "recommendations": [
+            "\ud83d\udca1 Focus on reviewing fundamental concepts in your skill areas",
+            "\ud83d\udcda Practice explaining technical concepts with more detail and keywords",
+            "\ud83c\udfa4 Improve audio quality: speak clearly and at moderate pace",
+            "\ud83d\udd0a Practice answering in a quiet environment with good microphone",
+            "\ud83d\udc64 Improve eye contact and maintain good posture during interviews",
+            "\ud83d\udcf9 Practice on camera to build confidence and professional presence"
+          ],
+          "detailed_analysis": [
+            {
+              "audio_score": 0,
+              "category": "python",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "easy",
+              "question": "Explain the difference between lists and tuples in Python.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "Explain closures in JavaScript with an example.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "mongodb",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What are indexes in MongoDB and types available?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "react",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What are React Hooks and why were they introduced?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "java",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "easy",
+              "question": "What is method overloading and overriding in Java?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "sql",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What are indexes in databases and when to use them?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "python",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "easy",
+              "question": "How do you handle exceptions in Python? Explain try-except blocks with an example.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "java",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "Explain the concept of Java Collections Framework.",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "javascript",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What are Promises in JavaScript and how do they work?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            },
+            {
+              "audio_score": 0,
+              "category": "python",
+              "composite_score": 0.012,
+              "content_score": {
+                "keyword_score": 0,
+                "keywords_found": [],
+                "length_score": 0.2,
+                "semantic_score": 0,
+                "total_score": 0.02
+              },
+              "difficulty": "medium",
+              "question": "What are Python decorators and how do you use them?",
+              "transcription": "",
+              "user_answer": "[Transcription unavailable - please ensure FFmpeg is installed on server]",
+              "video_score": 0
+            }
+          ]
+        },
+        {
           "id": "8b4f5ba9-ac0b-49ab-8b70-30803e032a67",
           "date": "2026-03-03T06:14:38Z",
           "interview_type": "video",
@@ -872,6 +2370,58 @@
             }
           ]
         }
+      ],
+      "asked_questions": [
+        "py_003",
+        "js_002",
+        "mongo_003",
+        "react_001",
+        "java_003",
+        "sql_003",
+        "py_001",
+        "java_002",
+        "js_003",
+        "py_002",
+        "git_002",
+        "react_002",
+        "aws_003",
+        "node_003",
+        "java_005",
+        "js_006",
+        "java_001",
+        "js_005",
+        "java_004",
+        "js_001",
+        "js_004",
+        "react_003",
+        "node_001",
+        "git_003",
+        "aws_004",
+        "react_005",
+        "react_006",
+        "react_004",
+        "aws_001",
+        "aws_002",
+        "git_001",
+        "node_002",
+        "android_004",
+        "flutter_004",
+        "docker_001",
+        "cicd_001",
+        "flutter_003",
+        "k8s_003",
+        "cicd_003",
+        "ios_003",
+        "ios_004",
+        "ts_001",
+        "flutter_005",
+        "docker_004",
+        "docker_003",
+        "sql_001",
+        "k8s_001",
+        "docker_005",
+        "k8s_002",
+        "k8s_005"
       ]
     }
   }
